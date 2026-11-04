@@ -30,7 +30,7 @@ async function show(adcode) {
   if (!node) return
   loading.value = true
   try {
-    const file = adcode === '100000' ? '100000_china_full.json' : node.file
+    const file = adcode === '100000' ? '100000_full.json' : node.file
     if (!file) return
     const data = await loadJson(file)
     echarts.registerMap(adcode, data)
