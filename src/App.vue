@@ -10,9 +10,9 @@ let chart = null
 let indexData = null
 let nameMap = {}   // 当前层级：区域名 -> adcode
 
-/** 请求 public/geojson 下的数据（按需加载，不进 bundle） */
+/** 请求数据集文件（vite publicDir 已指向 ../data，按需加载不进 bundle） */
 async function loadJson(file) {
-  const res = await fetch(`/geojson/${file}`)
+  const res = await fetch(`/${file}`)
   if (!res.ok) throw new Error(`加载失败: ${file}`)
   return res.json()
 }

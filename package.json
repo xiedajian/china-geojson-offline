@@ -1,12 +1,14 @@
 {
-  "name": "echarts-china-map",
+  "name": "china-geojson-offline",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "完全离线的中国行政区划 GeoJSON 数据集（全国/省/市/区县），附一键更新脚本与 ECharts 演示",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update-data": "python scripts/fetch_data.py"
   },
   "dependencies": {
     "echarts": "^5.5.1",

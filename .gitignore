@@ -4,6 +4,9 @@ node_modules/
 # 构建产物（部署时由 npm run build 重新生成）
 dist/
 
+# Wrangler 本地状态
+.wrangler/
+
 # 日志
 *.log
 npm-debug.log*
