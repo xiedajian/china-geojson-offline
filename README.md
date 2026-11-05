@@ -59,7 +59,16 @@ python scripts/fetch_data.py --out 其他目录
 脚本仅用标准库（`urllib` + `ThreadPoolExecutor`，16 线程并发，断点续传），
 无需 `pip install` 任何东西。全量下载约 360 个文件、25MB，1~2 分钟跑完。
 
-## 演示（ECharts 下钻）
+## 在线演示
+
+| 地址 | 说明 |
+|---|---|
+| **https://china-geojson-offline.pages.dev** | Cloudflare Pages（主演示地址） |
+| **https://xiedajian.github.io/china-geojson-offline/** | GitHub Pages（随仓库走） |
+
+演示内容：ECharts 点击「省 → 市 → 区」逐级下钻 + 面包屑返回，直观验证数据完整性。
+
+## 演示代码（ECharts 下钻）
 
 `src/App.vue` 是一个 ~150 行的 Vue 3 演示：点击省→市→区逐级下钻、
 面包屑返回、visualMap 着色。**它只是数据集的用法示例，不是项目主体。**
