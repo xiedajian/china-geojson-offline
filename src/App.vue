@@ -98,6 +98,7 @@ function resize() { chart?.resize() }
 onMounted(async () => {
   indexData = await loadJson('index.json')
   chart = echarts.init(chartEl.value)
+  window.__chart = chart // 调试/测试钩子
   chart.on('click', handleClick)
   window.addEventListener('resize', resize)
   await show('100000')

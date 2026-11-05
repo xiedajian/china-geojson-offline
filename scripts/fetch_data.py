@@ -119,6 +119,7 @@ def main():
                         index[str(ad)]["children"].append(str(cad))
             children.append(str(ad))
         node["children"] = children
+        index["100000"]["children"].append(code)  # 全国层的下钻子级
 
     # 从全国数据补齐省级名称
     for feat in china["features"]:
